@@ -1,0 +1,56 @@
+body {
+    font-family:  'Roboto ', sans-serif; /* Fonte da página */
+    background-color: black; /* Cor de fundo da página */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    display: flex; /* Usando flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura da tela inteira */
+}
+
+.profile-image {
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    margin-bottom: 15px; /* Espaço abaixo da imagem */
+}
+
+.container {
+    text-align: center; /* Alinhamento centralizado do texto */
+    background-color: whitesmoke; /* Cor de fundo do container */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra do container */
+    padding: 20px; /* Preenchimento interno */
+    width: 300px; /* Largura fixa do container */
+}
+
+h1 {
+    margin: 8px 0; /* Margens do título */
+}
+
+p {
+    color: #777; /* Cor do texto da descrição */
+    margin: 10px 0 20px; /* Margens da descrição */
+}
+
+.links {
+    display: flex; /* Usando flexbox para organizar os links */
+    flex-direction: column; /* Colocando os links em coluna */
+}
+
+.links a {
+    background-color: #7AC1FF; /* Cor de fundo dos links */
+    color: white; /* Cor do texto dos links */
+    padding: 10px; /* Preenchimento dos links */
+    margin: 5px 0; /* Margem entre os links */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    border-radius: 5px; /* Cantos arredondados dos links */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+
+}
+
+.links a:hover {
+    background-color: #0252DE; /* Cor de fundo ao passar o mouse */
+}
