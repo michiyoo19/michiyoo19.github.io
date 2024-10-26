@@ -1,56 +1,59 @@
 body {
-    font-family:  'Roboto ', sans-serif; /* Fonte da página */
-    background-color: black; /* Cor de fundo da página */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove preenchimento padrão */
-    display: flex; /* Usando flexbox para centralizar */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Altura da tela inteira */
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .profile-image {
-    width: 100px; /* Largura da imagem */
-    height: 100px; /* Altura da imagem */
-    border-radius: 50%; /* Faz a imagem ficar redonda */
-    object-fit: cover; /* Mantém a proporção da imagem */
-    margin-bottom: 15px; /* Espaço abaixo da imagem */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute; /* Define a posição absoluta */
+    top: -50px; /* Ajusta para metade ficar fora do container */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
 }
 
 .container {
-    text-align: center; /* Alinhamento centralizado do texto */
-    background-color: whitesmoke; /* Cor de fundo do container */
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra do container */
-    padding: 20px; /* Preenchimento interno */
-    width: 300px; /* Largura fixa do container */
+    position: relative; /* Define o container como referência de posicionamento */
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 60px 20px 20px; /* Ajusta o padding para dar espaço à imagem */
+    width: 300px;
 }
 
 h1 {
-    margin: 8px 0; /* Margens do título */
+    margin: 8px 0;
 }
 
 p {
-    color: #777; /* Cor do texto da descrição */
-    margin: 10px 0 20px; /* Margens da descrição */
+    color: #777;
+    margin: 10px 0 20px;
 }
 
 .links {
-    display: flex; /* Usando flexbox para organizar os links */
-    flex-direction: column; /* Colocando os links em coluna */
+    display: flex;
+    flex-direction: column;
 }
 
 .links a {
-    background-color: #7AC1FF; /* Cor de fundo dos links */
-    color: white; /* Cor do texto dos links */
-    padding: 10px; /* Preenchimento dos links */
-    margin: 5px 0; /* Margem entre os links */
-    text-decoration: none; /* Remove o sublinhado do texto */
-    border-radius: 5px; /* Cantos arredondados dos links */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-
+    background-color: #7AC1FF;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .links a:hover {
-    background-color: #0252DE; /* Cor de fundo ao passar o mouse */
+    background-color: #0252DE;
 }
